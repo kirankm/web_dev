@@ -4,22 +4,50 @@
         <title>
             Jovian Careers
         </title>
+        <style>
+            h1 {
+                font-size: 40px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(100,100,100);
+                text-align: center;
+            }
+            h2 {
+                font-size: 32px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(100,100,100);
+                text-align: center;
+            }
+            #banner {
+                width:100%;
+            }
+            #container{
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            .bodytext{
+                font-family: Roboto;
+                color: rgb(80,80,80)
+            }
+        </style>
     </head>
     <body>
-        <h1>Jovian Careers</h1>
-        <img src="static/career.jpeg" width = 960px height="200px">
-        <h2>About Jovian</h2>
-        <p>
-            024-09-21 18:10:51.596 [info] > git rev-parse refs/remotes/origin/main [21ms]
-            2024-09-21 18:10:51.621 [info] > git status -z -uall [24ms]
-            2024-09-21 18:10:51.651 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [29ms]
-            2024-09-21 18:10:51.676 [info] > git config --local branch.main.vscode-merge-base [25ms]
-            2024-09-21 18:10:51.704 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/origin/main refs/remotes/origin/main [27ms]
-            2024-09-21 18:11:01.129 [info] > git log --oneline --cherry main...main@{upstream} -- [30ms]
-        </p>
-        <h2>Open Positions</h2>
-        <p> To DO: Show The Jobs Here</p>
-        <button> Contact Us</button>
-
+        <div id="container">
+            <h1>Jovian Careers</h1>
+            <img id = "banner" src="static/career.jpeg" width = 960px height="200px" >
+            <h2>About Jovian</h2>
+            <p class = 'bodytext'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h2>Open Positions</h2>
+            <p class = 'bodytext'> To DO: Show The Jobs Here</p>
+            <div style="text-align:center">
+                <button> Contact Us</button>
+                <p>
+                    CopyRight 2022, Jovian
+                </p>
+            </div>
+        </div>
     </body>
 </html>
