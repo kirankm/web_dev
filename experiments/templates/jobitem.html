@@ -1,0 +1,21 @@
+<div class="row border-bottom" style = "border-color: rgb(100,100,100); padding-bottom:8px;">
+    <div class = "col-9">
+        <h4 class = "mb-2 mt-4" style = "color:rgb(120,120,120)">
+            {{job['title']}}
+        </h4>
+        <div>
+            <b>Location:</b>
+            {{job['location']}}
+        </div>
+        {% if 'salary' in job %}    
+            <div>
+                <b>Salary:</b>
+                {{job['salary']}}
+            </div>
+        {% endif %}
+    </div>
+    <div class="col-3 d-flex justify-content-end align-items-center">
+        <button type="button" class="btn btn-outline-primary mb-2 mt-4">Apply Now</button>
+    </div>
+</div>
+
