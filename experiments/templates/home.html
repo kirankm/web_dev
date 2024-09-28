@@ -13,16 +13,41 @@
                 width: 100%;
                 object-fit: cover;
             }
+
+            #lead{
+                height: 320px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 16px;
+                margin-bottom:16px;
+            }
+
+            .lead-passage{
+                display: flex;
+                align-items: center;
+                justify-content: center; /* optional: center text horizontally */
+                height: 80%;
+            }
+            
         </style>
     </head>
     <body>
+        {% include 'navbar.html' %}
+        <img src="static/career.jpeg" class = "img-fluid mb-4" id="banner">
         <div class="container">
-            <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
-            <img src="static/career.jpeg" class = "img-fluid" id="banner">
+            <h1 class="text-center mt-2 mb-5">Jovian Careers</h1>
+            
             <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-            <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <p class="lead-passage lead">
+                        At Jovian, we make learning software development and machine learning feel like a fun adventure! Whether you're just starting out or looking to level up, we've got you covered with courses that break down complex topics into bite-sized, easy-to-follow lessons. Our hands-on projects and interactive exercises make sure you’re not just learning, but building cool things along the way. Join the Jovian community and let’s turn your coding dreams into reality—one line of code at a time!
+                    </p>
+                </div>
+                <div class = "d-none d-md-block col-md-6">
+                    <img src="static/lead.jpg" class = "img-fluid mb-4" id="lead">
+                </div>
+            </div>
             <h2 class="text-center mt-2 mb-4">Job Openings</h2>
             <p> 
                 <div>
@@ -31,12 +56,11 @@
                     {% endfor %}
                 </div>
             </p>
-            <div class="text-center">
-                <button class="btn btn-primary btn-lg"> Contact Us</button>
-                <p class="mt-4">
-                    CopyRight 2022, Jovian
-                </p>
+            <div class="text-center mt-5 mb-5">
+                <a href="mailto:kiran.k.madan@jovian.com?subject=Question%20about%20Job%20Openings&body=Name%3A%20%3CName%3E%0D%0A%0D%0AQuestion%3A%20%3CEnter%20Question%20Here%3E" class="btn btn-primary btn-lg"> Contact Us</a>
             </div>
+            {% include 'footer.html' %}
         </div>
+        
     </body>
 </html>
